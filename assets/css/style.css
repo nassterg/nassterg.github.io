@@ -9,7 +9,7 @@
 .navbar {
     display: flex;
     justify-content: center; /* Center the menu */
-    background: #333;
+    background: #3C313D;
     padding: 10px 20px;
     color: white;
     width: 100%; /* Ensure it spans the full width */
@@ -88,7 +88,7 @@ section h2 {
 footer {
     text-align: center;
     padding: 10px;
-    background: #333; /* Dark background color */
+    background: #3C313D; /* Dark background color */
     color: white; /* White text color */
     margin-top: 20px;
 }
