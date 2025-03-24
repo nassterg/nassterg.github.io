@@ -61,7 +61,7 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Align logo to the left */
     justify-content: flex-start; /* Align logo to the top */
-    margin-top: 0; /* Remove the top margin */
+    margin-top: 0; /* Ensure no extra space above logo */
 }
 
 /* Logo styles */
@@ -76,7 +76,7 @@ body {
     display: flex;
     flex-direction: column; /* Stack menu items vertically */
     justify-content: flex-start;
-    margin-top: 0; /* Remove the top margin */
+    margin-top: 0; /* Ensure no extra space above menu content */
     padding-left: 40px; /* Adds space to the left of the menu */
     width: 75%; /* Ensure the content area takes up enough width */
 }
