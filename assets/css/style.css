@@ -9,13 +9,19 @@
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between avatar and menu */
+    justify-content: center; /* Center the menu */
     background: #333; /* Dark background */
     padding: 10px 20px;
     color: white;
+    position: relative; /* Needed for absolute positioning */
 }
 
-/* Logo/avatar on the left */
+/* Logo/avatar moved to the right */
+.logo {
+    position: absolute;
+    right: 20px; /* Push to the right */
+}
+
 .logo .avatar {
     width: 50px;
     height: 50px;
@@ -23,15 +29,9 @@
 }
 
 /* Center the menu */
-.menu {
-    flex-grow: 1; /* Takes available space */
-    text-align: center; /* Center menu items */
-}
-
 .menu ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center items horizontally */
     gap: 20px;
 }
 
