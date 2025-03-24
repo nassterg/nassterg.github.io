@@ -20,6 +20,6 @@ That’s why beyond just coding, I’m passionate about:
 🏃 <b>Marathon Training</b> – I’m a runner with a goal of participating marathons, constantly pushing myself to go further.<br>
 🏊 <b>Swimming</b> – Whether it’s just for fun in the pool or training for open-water races, I love the challenge of the water.<br>
 🚴 <b>Cycling</b> – Long rides are my escape, whether it's on a trainer or outside.<br>
-🍳 <b>Cooking</b> – Because of my training for the race, I like and need to experiment with recipes, making meals from scratch, which helps me with my energy.<br>
+🍳 <b>Cooking</b> – Because of my races training, I like and need to experiment with recipes, making meals from scratch, which helps me with my energy.<br>
 💉 <b>Blood Donation</b> – I believe in giving back, and donating blood is one way I try to make a positive impact on my community.
 
