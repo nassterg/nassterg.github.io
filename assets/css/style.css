@@ -53,6 +53,7 @@ body {
     gap: 20px; /* Space between the two columns */
     max-width: 1200px;
     margin: 40px auto;
+    width: 100%;
 }
 
 /* Left column (Logo) */
@@ -62,6 +63,7 @@ body {
     align-items: flex-start; /* Left-align the logo */
     justify-content: flex-start; /* Align items at the top */
     margin-top: 20px; /* Adjust logo top margin */
+    flex: 1; /* Make this column flexible */
 }
 
 /* Logo styles */
@@ -78,7 +80,7 @@ body {
     justify-content: flex-start;
     margin-top: 20px; /* Same as logo margin */
     padding-left: 40px; /* Adds space to the left of the right column */
-    width: 70%; /* Ensure it takes up appropriate width */
+    flex: 2; /* Make this column larger than the left column */
 }
 
 /* Footer Styles */
