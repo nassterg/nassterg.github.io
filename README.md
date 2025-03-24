@@ -1,7 +1,7 @@
 # nassterg.github.io
 
 👋 <b>Welcome to My Space on the Web</b>
-<br><br>
+<br><br><br><br>
 "The best way to predict the future is to invent it." – Alan Kay<br><br>
 Hi, I’m Nasos Stergiou, a Data Analyst passionate about building things that matter. Whether it’s writing clean, efficient code, solving problems, or exploring new technologies, I believe in creating the future rather than just following trends.
 <br><br>
