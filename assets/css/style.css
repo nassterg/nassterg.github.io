@@ -47,10 +47,10 @@ body {
 
 /* Main content (two-column layout) */
 .content {
-    display: flex; /* Flexbox container for columns */
+    display: flex; /* Flexbox container for two columns */
     justify-content: center; /* Center columns in the page */
     align-items: flex-start; /* Align both at the top */
-    gap: 20px;
+    gap: 20px; /* Space between the two columns */
     max-width: 1200px;
     margin: 40px auto;
 }
@@ -61,14 +61,14 @@ body {
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Left-align the logo */
     justify-content: flex-start; /* Align items at the top */
-    margin-top: 10px; /* Adjust logo top margin */
+    margin-top: 20px; /* Adjust logo top margin */
 }
 
 /* Logo styles */
 .logo .avatar {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular logo */
 }
 
 /* Right column (Menu Content) */
@@ -76,9 +76,9 @@ body {
     display: flex;
     flex-direction: column; /* Stack menu sections vertically */
     justify-content: flex-start;
-    margin-top: 10px; /* Align the menu top */
-    padding-left: 40px; /* Space to the left of the right column */
-    width: 75%; /* Ensure it takes up appropriate width */
+    margin-top: 20px; /* Same as logo margin */
+    padding-left: 40px; /* Adds space to the left of the right column */
+    width: 70%; /* Ensure it takes up appropriate width */
 }
 
 /* Footer Styles */
