@@ -8,8 +8,8 @@
 /* Set a clean, modern font */
 body {
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
-    background-color: #f7f7f7; /* Light background */
-    color: #333; /* Dark text for readability */
+    background-color: #f7f7f7; /* Light background for the body */
+    color: #333; /* Default text color */
     line-height: 1.6;
 }
 
@@ -17,9 +17,8 @@ body {
 .navbar {
     display: flex;
     justify-content: center; /* Center the menu */
-    background: white;
+    background-color: #3c313d; /* Dark background for the menu */
     padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navbar */
     width: 100%;
 }
 
@@ -34,11 +33,11 @@ body {
 }
 
 .menu ul li a {
-    color: #333;
+    color: #ebeaec; /* Light font color */
     text-decoration: none;
     font-size: 18px;
     padding: 8px 0;
-    text-transform: uppercase; /* Make it more minimal and clean */
+    text-transform: uppercase; /* Minimalist style */
     font-weight: 400; /* Lighter font weight for a clean look */
 }
 
@@ -66,10 +65,9 @@ body {
 }
 
 .logo .avatar {
-    width: 120px;
-    height: 120px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    border: 3px solid #ddd; /* Subtle border around the avatar */
 }
 
 /* Right column styling (text content from the menu) */
@@ -101,7 +99,7 @@ section p {
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #333;
+    background: #3C313D;
     color: white;
     margin-top: 40px;
     font-size: 16px;
