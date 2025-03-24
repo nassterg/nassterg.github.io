@@ -24,8 +24,8 @@ body {
 
 .menu ul {
     list-style: none;
-    display: flex; /* Flex for horizontal layout */
-    gap: 30px; /* Space between the menu items */
+    display: flex;
+    gap: 30px; /* Slightly more space between the items */
 }
 
 .menu ul li {
@@ -45,38 +45,42 @@ body {
     color: #657ED4; /* Updated hover color */
 }
 
-/* Create the main content (one row with logo and menu) */
-.header {
-    display: flex;
-    justify-content: space-between; /* Space between logo and menu */
-    align-items: center; /* Align items vertically in the center */
-    padding: 20px;
+/* Create the main content (two-column layout) */
+.content {
+    display: flex; /* Flexbox for two columns */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto; /* Center the content */
+    gap: 20px; /* Space between columns */
+    justify-content: space-between; /* Ensure space between logo and menu */
+    align-items: flex-start; /* Ensure both logo and menu are at the top */
 }
 
 /* Left column (logo) */
 .left-column {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: flex-start; /* Align left */
+    margin-top: 20px; /* Same as the menu top margin */
 }
 
+/* Logo styles */
 .logo .avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%; /* Circular logo */
 }
 
-/* Right column (menu) */
+/* Right column (menu content) */
 .right-column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* Stack menu items vertically */
     justify-content: flex-start;
-    align-items: center;
+    margin-top: 20px; /* Same as the logo margin */
+    padding-left: 40px; /* Adds space to the left of the menu */
 }
 
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px 0;
