@@ -5,13 +5,14 @@
     box-sizing: border-box;
 }
 
-/* Style the navigation bar */
+/* Style the navigation bar (center the menu) */
 .navbar {
     display: flex;
-    justify-content: flex-end; /* Move the menu to the right */
+    justify-content: center; /* Center the menu */
     background: #333;
     padding: 10px 20px;
     color: white;
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .menu ul {
@@ -36,18 +37,23 @@
     border-radius: 5px;
 }
 
-/* Main content styling: Grid with two columns */
+/* Center the main content (2-column layout) */
 .content {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Left column (logo), right column (text) */
     gap: 20px;
     padding: 20px;
+    justify-items: center; /* Center the grid items (content) horizontally */
+    max-width: 1200px; /* Limit the max width of the content */
+    margin: 0 auto; /* Center the content block horizontally */
 }
 
+/* Main container for the two-column layout */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Split content into two columns */
     gap: 20px;
+    width: 100%; /* Ensure full width */
 }
 
 /* Left column styling (logo) */
