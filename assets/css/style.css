@@ -8,7 +8,7 @@
 /* Set a clean, modern font */
 body {
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
-    background-color: #f7f7f7; /* Light background */
+    background-color: #f7f7f7; /* Light background for the body */
     color: #333; /* Default text color */
     line-height: 1.6;
 }
@@ -47,11 +47,11 @@ body {
 
 /* Create the main content (two-column layout) */
 .content {
-    display: flex; /* Change grid to flex */
+    display: flex; /* Flexbox for two columns */
     max-width: 1200px;
     margin: 40px auto; /* Center the content */
-    justify-content: space-between; /* Ensure space between logo and menu text */
     gap: 20px; /* Space between columns */
+    justify-content: space-between; /* Ensure space between logo and menu */
 }
 
 /* Left column (logo) */
@@ -59,20 +59,24 @@ body {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start;
-    align-items: center; /* Center avatar */
-    margin-top: 20px; /* Adjust to give space from the top */
+    align-items: flex-start; /* Align left */
+    margin-top: 10px; /* Same as the menu top margin */
 }
 
+/* Logo styles */
 .logo .avatar {
     width: 180px;
     height: 180px;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular logo */
 }
 
 /* Right column (menu content) */
 .right-column {
-    flex-grow: 1; /* Allow this to take up remaining space */
-    padding-left: 40px;
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    justify-content: flex-start;
+    margin-top: 10px; /* Same as the logo margin */
+    padding-left: 40px; /* Adds space to the left of the menu */
 }
 
 /* Styling for individual sections */
