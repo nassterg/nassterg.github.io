@@ -58,7 +58,7 @@ body {
 /* Left column (logo) */
 .left-column {
     display: flex;
-   /* flex-direction: column;  Stack items vertically */ 
+    flex-direction: column; /* Stack items vertically */ 
     justify-content: flex-start;
     align-items: flex-start; /* Align left */
     margin-top: 10px; /* Adjusted margin-top for better alignment */
@@ -73,9 +73,9 @@ body {
 
 /* Right column (menu content) */
 .right-column {
-   /* display: flex; */
- /*  flex-direction: column;  Stack menu items vertically */
-   /* justify-content: flex-start; */
+    display: flex; 
+   flex-direction: column; /* Stack menu items vertically */
+   justify-content: flex-start;
     margin-top: 10px; /* Adjusted margin-top for better alignment */
     padding-left: 40px; /* Adds space to the left of the menu */
 }
