@@ -8,19 +8,18 @@
 /* Style the navigation bar */
 .navbar {
     display: flex;
-    align-items: center;
-    justify-content: center; /* Center the menu */
+    justify-content: space-between; /* Space between avatar and menu */
+    align-items: center; /* Center vertically */
     background: #333; /* Dark background */
     padding: 10px 20px;
     color: white;
-    position: relative;
 }
 
 /* Center the menu */
 .menu {
     display: flex;
-    justify-content: center;
-    flex-grow: 1; /* Allows menu to take up space */
+    justify-content: center; /* Keep the menu centered */
+    flex-grow: 1;
 }
 
 .menu ul {
@@ -45,9 +44,9 @@
     border-radius: 5px;
 }
 
-/* Logo positioned near the menu, not far right */
+/* Logo/avatar on the right side of the menu */
 .logo {
-    margin-left: 550px; /* Move it a bit away from the menu */
+    margin-left: 20px; /* Adjust the gap between the menu and avatar */
 }
 
 .logo .avatar {
