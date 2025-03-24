@@ -60,7 +60,8 @@ body {
     display: flex;
     flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align left */
-    margin-top: 10px; /* Margin for the top alignment */
+    margin-top: 20px; /* Margin for the top alignment */
+    width: 20%; /* Adjust the width of the left column */
 }
 
 /* Logo styles */
@@ -75,7 +76,8 @@ body {
     display: flex;
     flex-direction: column; /* Stack menu items vertically */
     justify-content: flex-start;
-    margin-top: 10px; /* Same as the logo margin */
+    margin-top: 20px; /* Same as the logo margin */
+    width: 75%; /* Adjust the width of the right column */
 }
 
 /* Footer styling */
