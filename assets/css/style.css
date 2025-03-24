@@ -45,42 +45,38 @@ body {
     color: #657ED4; /* Updated hover color */
 }
 
-/* Create the main content (two-column layout) */
-.content {
-    display: flex; /* Flexbox for two columns */
-    justify-content: flex-start; /* Align both columns to the left */
-    align-items: flex-start; /* Ensure both the logo and menu are aligned at the top */
+/* Create the main content (one row with logo and menu) */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px;
     max-width: 1200px;
-    margin: 40px auto; /* Center the content */
+    margin: 0 auto;
 }
 
 /* Left column (logo) */
 .left-column {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; /* Align left */
-    margin-top: 20px; /* Same as the menu top margin */
+    align-items: flex-start;
 }
 
-/* Logo styles */
 .logo .avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%; /* Circular logo */
 }
 
-/* Right column (menu content) */
+/* Right column (menu) */
 .right-column {
     display: flex;
-    flex-direction: row; /* Ensure horizontal layout */
+    flex-direction: row;
     justify-content: flex-start;
-    align-items: center; /* Align the menu at the center */
-    margin-top: 20px; /* Same as the logo margin */
-    padding-left: 40px; /* Adds space to the left of the menu */
+    align-items: center;
 }
 
-/* Footer styling */
 footer {
     text-align: center;
     padding: 20px 0;
