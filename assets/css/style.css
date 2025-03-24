@@ -48,8 +48,8 @@ body {
 /* Main content (two-column layout) */
 .content {
     display: flex; /* Flexbox for two columns */
-    justify-content: center; /* Center the content horizontally */
-    align-items: flex-start; /* Align both logo and menu at the top */
+    justify-content: flex-start; /* Align the content to the left */
+    align-items: flex-start; /* Align both columns at the top */
     gap: 30px; /* Space between the two columns */
     margin: 40px auto;
     max-width: 1200px;
@@ -59,9 +59,9 @@ body {
 .left-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align to left */
-    justify-content: flex-start; /* Align top */
-    margin-top: 20px; /* Align with top margin */
+    align-items: flex-start; /* Align logo to the left */
+    justify-content: flex-start; /* Align logo to the top */
+    margin-top: 20px; /* Align logo with the top */
 }
 
 /* Logo styles */
@@ -77,8 +77,7 @@ body {
     flex-direction: column; /* Stack menu items vertically */
     justify-content: flex-start;
     margin-top: 20px; /* Same as the logo margin */
-    padding-left: 20px; /* Adds space between the logo and text */
-    width: 75%; /* Adjust width of the right column */
+    width: 75%; /* Ensure the content area takes up enough width */
 }
 
 /* Footer styling */
