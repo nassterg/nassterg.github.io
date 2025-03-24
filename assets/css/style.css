@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Body styles */
+/* Set a clean, modern font */
 body {
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
     background-color: #f7f7f7; /* Light background for the body */
@@ -13,63 +13,70 @@ body {
     line-height: 1.6;
 }
 
-/* Header section: Align logo and menu horizontally */
-.header {
+/* Style the navigation bar (menu) */
+.navbar {
     display: flex;
-    justify-content: space-between; /* Space between logo and menu */
-    align-items: center; /* Vertically align the items in the center */
-    padding: 20px 10%;
-    background-color: #ffffff; /* White background for the header */
+    justify-content: center; /* Center the menu */
+    background-color: #3c313d; /* Dark background for the menu */
+    padding: 10px 0;
     width: 100%;
 }
 
-/* Logo container */
-.logo-container {
-    display: flex;
-    align-items: center; /* Vertically align the logo */
+.menu ul {
+    list-style: none;
+    display: flex; /* Flex for horizontal layout */
+    gap: 30px; /* Space between the menu items */
 }
 
-.avatar {
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #ebeaec; /* Light font color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0;
+    text-transform: uppercase; /* Minimalist style */
+    font-weight: 400; /* Lighter font weight for a clean look */
+}
+
+.menu ul li a:hover {
+    color: #657ED4; /* Updated hover color */
+}
+
+/* Create the main content (one row with logo and menu) */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between logo and menu */
+    align-items: center; /* Align items vertically in the center */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left column (logo) */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logo .avatar {
     width: 180px;
     height: 180px;
-    border-radius: 50%; /* Make the logo circular */
+    border-radius: 50%; /* Circular logo */
 }
 
-/* Navbar (menu) styling */
-.navbar {
+/* Right column (menu) */
+.right-column {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
 }
 
-.menu {
-    list-style: none;
-    display: flex; /* Display menu items in a row */
-    gap: 30px; /* Space between menu items */
-}
-
-.menu li {
-    display: inline-block;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #3c313d; /* Dark color for text */
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 400; /* Light weight for a clean look */
-}
-
-.menu a:hover {
-    color: #657ED4; /* Light blue hover color */
-}
-
-/* Main content */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-/* Footer styles */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -77,4 +84,9 @@ footer {
     color: white;
     margin-top: 40px;
     font-size: 16px;
+}
+
+/* Add a subtle hover effect for links */
+a:hover {
+    text-decoration: underline;
 }
