@@ -60,7 +60,7 @@ body {
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start;
     align-items: flex-start; /* Align left */
-    margin-top: 10px; /* Same as the menu top margin */
+    margin-top: 20px; /* Same as the menu top margin */
 }
 
 /* Logo styles */
@@ -75,8 +75,14 @@ body {
     display: flex;
     flex-direction: column; /* Stack menu items vertically */
     justify-content: flex-start;
-    margin-top: 10px; /* Same as the logo margin */
+    margin-top: 20px; /* Same as the logo margin */
     padding-left: 40px; /* Adds space to the left of the menu */
+}
+
+/* Ensure both columns align properly */
+.content {
+    display: flex; /* Make sure the content uses a flex container */
+    align-items: flex-start; /* Align columns at the top */
 }
 
 /* Styling for individual sections */
