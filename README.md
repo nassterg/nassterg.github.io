@@ -1,5 +1,4 @@
 # nassterg.github.io
-<img src="{{ site.avatar }}" alt="nassterg" width="150" align="left">
 
 👋 <b>Welcome to My Space on the Web</b>
 <br><br>
