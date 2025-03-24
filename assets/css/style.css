@@ -47,7 +47,7 @@
 
 /* Logo positioned near the menu, not far right */
 .logo {
-    margin-left: 30px; /* Move it a bit away from the menu */
+    margin-left: 10px; /* Move it a bit away from the menu */
 }
 
 .logo .avatar {
