@@ -45,23 +45,22 @@ body {
     color: #657ED4; /* Updated hover color */
 }
 
-/* Create the main content (two-column layout) */
+/* Main content (two-column layout) */
 .content {
     display: flex; /* Flexbox for two columns */
-    max-width: 1200px;
-    margin: 40px auto; /* Center the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: flex-start; /* Align both logo and menu at the top */
     gap: 20px; /* Space between columns */
-    justify-content: space-between; /* Ensure space between logo and menu */
-    align-items: flex-start; /* Ensure both logo and menu are at the top */
+    margin: 40px auto;
+    max-width: 1200px;
 }
 
 /* Left column (logo) */
 .left-column {
     display: flex;
-    flex-direction: column; /* Stack items vertically */ 
-    justify-content: flex-start;
+    flex-direction: column; /* Stack items vertically */
     align-items: flex-start; /* Align left */
-    margin-top: 10px; /* Adjusted margin-top for better alignment */
+    margin-top: 10px; /* Margin for the top alignment */
 }
 
 /* Logo styles */
@@ -73,11 +72,10 @@ body {
 
 /* Right column (menu content) */
 .right-column {
-    display: flex; 
-   flex-direction: column; /* Stack menu items vertically */
-   justify-content: flex-start;
-    margin-top: 10px; /* Adjusted margin-top for better alignment */
-    padding-left: 40px; /* Adds space to the left of the menu */
+    display: flex;
+    flex-direction: column; /* Stack menu items vertically */
+    justify-content: flex-start;
+    margin-top: 10px; /* Same as the logo margin */
 }
 
 /* Footer styling */
