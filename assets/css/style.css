@@ -8,18 +8,10 @@
 /* Style the navigation bar */
 .navbar {
     display: flex;
-    justify-content: space-between; /* Space between avatar and menu */
-    align-items: center; /* Center vertically */
-    background: #333; /* Dark background */
+    justify-content: flex-end; /* Move the menu to the right */
+    background: #333;
     padding: 10px 20px;
     color: white;
-}
-
-/* Center the menu */
-.menu {
-    display: flex;
-    justify-content: center; /* Keep the menu centered */
-    flex-grow: 1;
 }
 
 .menu ul {
@@ -44,25 +36,48 @@
     border-radius: 5px;
 }
 
-/* Logo/avatar on the right side of the menu */
-.logo {
-    margin-left: 20px; /* Adjust the gap between the menu and avatar */
+/* Main content styling: Grid with two columns */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Left column (logo), right column (text) */
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Split content into two columns */
+    gap: 20px;
+}
+
+/* Left column styling (logo) */
+.left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo .avatar {
-    width: 150px;
-    height: 150px;
+    width: 180px; /* Adjust size of the avatar */
+    height: 180px;
     border-radius: 50%;
 }
 
-/* Main content styling */
-.content {
-    padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
+/* Right column styling (text content from the menu) */
+.right-column {
+    padding-left: 20px;
 }
 
-/* Footer styling */
+/* Styling for individual sections */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
