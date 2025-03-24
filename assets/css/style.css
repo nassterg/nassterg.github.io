@@ -1,1 +1,68 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between avatar and menu */
+    background: #333; /* Dark background */
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo/avatar on the left */
+.logo .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/* Center the menu */
+.menu {
+    flex-grow: 1; /* Takes available space */
+    text-align: center; /* Center menu items */
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+}
+
+.menu ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Main content styling */
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
