@@ -8,7 +8,7 @@
 /* Set a clean, modern font */
 body {
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
-    background-color: #f7f7f7; /* Light background for the body */
+    background-color: #f7f7f7; /* Light background */
     color: #333; /* Default text color */
     line-height: 1.6;
 }
@@ -45,23 +45,22 @@ body {
     color: #007BFF; /* Subtle hover effect */
 }
 
-/* Center the main content (2-column layout) */
+/* Create the main content (two-column layout) */
 .content {
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* Left column (logo), right column (text) */
-    gap: 40px;
-    padding: 40px 20px;
-    justify-items: center;
+    display: flex; /* Change grid to flex */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 40px auto; /* Center the content */
+    justify-content: space-between; /* Ensure space between logo and menu text */
+    gap: 20px; /* Space between columns */
 }
 
-/* Left column styling (logo) */
+/* Left column (logo) */
 .left-column {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 20px;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start;
+    align-items: center; /* Center avatar */
+    margin-top: 20px; /* Adjust to give space from the top */
 }
 
 .logo .avatar {
@@ -70,8 +69,9 @@ body {
     border-radius: 50%;
 }
 
-/* Right column styling (text content from the menu) */
+/* Right column (menu content) */
 .right-column {
+    flex-grow: 1; /* Allow this to take up remaining space */
     padding-left: 40px;
 }
 
