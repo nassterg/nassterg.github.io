@@ -7,17 +7,17 @@
 
 /* Set a clean, modern font */
 body {
-    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
-    background-color: #f7f7f7; /* Light background for the body */
-    color: #333; /* Default text color */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
     line-height: 1.6;
 }
 
-/* Style the navigation bar (menu) */
+/* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: center; /* Center the menu */
-    background-color: #3c313d; /* Dark background for the menu */
+    justify-content: center;
+    background-color: #3c313d;
     padding: 10px 0;
     width: 100%;
 }
@@ -25,7 +25,7 @@ body {
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 30px; /* Slightly more space between the items */
+    gap: 30px; /* Space between menu items */
 }
 
 .menu ul li {
@@ -33,65 +33,65 @@ body {
 }
 
 .menu ul li a {
-    color: #ebeaec; /* Light font color */
+    color: #ebeaec;
     text-decoration: none;
     font-size: 18px;
     padding: 8px 0;
-    text-transform: uppercase; /* Minimalist style */
-    font-weight: 400; /* Lighter font weight for a clean look */
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .menu ul li a:hover {
-    color: #657ED4; /* Updated hover color */
+    color: #657ED4; /* Hover color */
 }
 
 /* Main content (two-column layout) */
 .content {
-    display: flex; /* Flexbox for two columns */
-    justify-content: flex-start; /* Align the content to the left */
-    align-items: flex-start; /* Align both columns at the top */
-    gap: 30px; /* Space between the two columns */
-    margin: 40px auto;
+    display: flex; /* Flexbox container for columns */
+    justify-content: center; /* Center columns in the page */
+    align-items: flex-start; /* Align both at the top */
+    gap: 20px;
     max-width: 1200px;
+    margin: 40px auto;
 }
 
-/* Left column (logo) */
+/* Left column (Logo) */
 .left-column {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align logo to the left */
-    justify-content: flex-start; /* Align logo to the top */
-    margin-top: 0; /* Ensure no extra space above logo */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Left-align the logo */
+    justify-content: flex-start; /* Align items at the top */
+    margin-top: 10px; /* Adjust logo top margin */
 }
 
 /* Logo styles */
 .logo .avatar {
     width: 180px;
     height: 180px;
-    border-radius: 50%; /* Circular logo */
+    border-radius: 50%;
 }
 
-/* Right column (menu content) */
+/* Right column (Menu Content) */
 .right-column {
     display: flex;
-    flex-direction: column; /* Stack menu items vertically */
+    flex-direction: column; /* Stack menu sections vertically */
     justify-content: flex-start;
-    margin-top: 0; /* Ensure no extra space above menu content */
-    padding-left: 40px; /* Adds space to the left of the menu */
-    width: 75%; /* Ensure the content area takes up enough width */
+    margin-top: 10px; /* Align the menu top */
+    padding-left: 40px; /* Space to the left of the right column */
+    width: 75%; /* Ensure it takes up appropriate width */
 }
 
-/* Footer styling */
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #3C313D; /* Footer color */
+    background: #3C313D;
     color: white;
     margin-top: 40px;
     font-size: 16px;
 }
 
-/* Add a subtle hover effect for links */
+/* Add subtle hover effect for links */
 a:hover {
     text-decoration: underline;
 }
