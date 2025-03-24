@@ -5,20 +5,28 @@
     box-sizing: border-box;
 }
 
+/* Set a clean, modern font */
+body {
+    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
+    background-color: #f7f7f7; /* Light background */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+}
+
 /* Style the navigation bar (menu) */
 .navbar {
     display: flex;
     justify-content: center; /* Center the menu */
-    background: #3C313D;
-    padding: 10px 20px;
-    color: white;
-    width: 100%; /* Ensure it spans the full width */
+    background: white;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the navbar */
+    width: 100%;
 }
 
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px; /* Slightly more space between the items */
 }
 
 .menu ul li {
@@ -26,69 +34,80 @@
 }
 
 .menu ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 18px;
-    padding: 8px 12px;
+    padding: 8px 0;
+    text-transform: uppercase; /* Make it more minimal and clean */
+    font-weight: 400; /* Lighter font weight for a clean look */
 }
 
 .menu ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+    color: #007BFF; /* Subtle hover effect */
 }
 
 /* Center the main content (2-column layout) */
 .content {
     display: grid;
     grid-template-columns: 1fr 3fr; /* Left column (logo), right column (text) */
-    gap: 20px;
-    padding: 20px;
-    justify-items: center; /* Center the grid items (content) horizontally */
-    max-width: 1200px; /* Limit the max width of the content */
-    margin: 0 auto; /* Center the content block horizontally */
-}
-
-/* Main container for the two-column layout */
-.main-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr; /* Split content into two columns */
-    gap: 20px;
-    width: 100%; /* Ensure full width */
+    gap: 40px;
+    padding: 40px 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Left column styling (logo) */
 .left-column {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align the avatar to the top */
-    margin-top: 20px; /* Add a margin from the top */
+    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .logo .avatar {
-    width: 180px; /* Adjust size of the avatar */
-    height: 180px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
+    border: 3px solid #ddd; /* Subtle border around the avatar */
 }
 
 /* Right column styling (text content from the menu) */
 .right-column {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 /* Styling for individual sections */
 section {
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* More space between sections */
+    font-size: 18px;
 }
 
 section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 700; /* Bold heading for clear contrast */
+    margin-bottom: 15px;
+    text-transform: uppercase; /* Minimalist style */
+    color: #333;
 }
 
+section p {
+    font-size: 18px;
+    color: #666; /* Slightly lighter text for body */
+    line-height: 1.6;
+}
+
+/* Footer styling */
 footer {
     text-align: center;
-    padding: 10px;
-    background: #3C313D; /* Dark background color */
-    color: white; /* White text color */
-    margin-top: 20px;
+    padding: 20px 0;
+    background: #333;
+    color: white;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+/* Add a subtle hover effect for links */
+a:hover {
+    text-decoration: underline;
 }
