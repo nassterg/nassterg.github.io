@@ -1,4 +1,4 @@
-# nassterg.github.io Welcome to My Space on the Web
+# nassterg.github.io
 
 👋 <b>Welcome to My Space on the Web</b>
 <br><br>
