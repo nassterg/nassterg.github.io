@@ -62,6 +62,7 @@ html, body {
 
 /* New Layout using CSS Grid */
 .main-container {
+    height: 100%;
     display: grid;
     grid-template-columns: 250px auto; /* Left column (logo) and right column (content) */
     max-width: 1200px;
