@@ -15,6 +15,17 @@
     box-sizing: border-box;
 }
 
+p {
+    font-size: 14px; /* Change font size of paragraphs */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+h2 {
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: adjust weight */
+    color: #333; /* Optional: adjust color */
+}
+
 /* Set a clean, modern font */
 html, body {
     font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
