@@ -29,31 +29,58 @@
 
         <!-- Right column: Main text content -->
         <div class="right-column">
-            <section id="home">
+            <section id="home" class="content-section active">
                 <h2>Home</h2>
                 <p>Welcome to my personal website!</p>
             </section>
-
-            <section id="projects">
+        
+            <section id="projects" class="content-section">
                 <h2>Projects</h2>
                 <p>Here are some of my projects...</p>
             </section>
-
-            <section id="blog">
+        
+            <section id="blog" class="content-section">
                 <h2>Blog</h2>
                 <p>Read my latest blog posts...</p>
             </section>
-
-            <section id="about">
+        
+            <section id="about" class="content-section">
                 <h2>About</h2>
                 <p>Learn more about me...</p>
             </section>
         </div>
+
     </main>
 
     <footer>
         <p>&copy; 2025 nassterg</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuLinks = document.querySelectorAll(".menu ul li a");
+            const sections = document.querySelectorAll(".content-section");
+    
+            menuLinks.forEach(link => {
+                link.addEventListener("click", function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+    
+                    // Hide all sections
+                    sections.forEach(section => {
+                        section.style.display = "none";
+                    });
+    
+                    // Show the selected section
+                    const targetId = this.getAttribute("href").substring(1); // Get id without #
+                    document.getElementById(targetId).style.display = "block";
+                });
+            });
+    
+            // Show only the "Home" section on page load
+            sections.forEach(section => section.style.display = "none");
+            document.getElementById("home").style.display = "block";
+        });
+    </script>
 
 </body>
 </html>
