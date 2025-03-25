@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nassterg.github.io</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navbar (menu at the top right) -->
+
+    <!-- Navbar (menu at the top) -->
     <nav class="navbar">
         <div class="menu">
             <ul>
@@ -19,43 +20,40 @@
         </div>
     </nav>
 
-    <!-- Main content with two columns -->
-    <main class="content">
-        <div class="main-container">
-            <!-- Left column: Logo -->
-            <div class="left-column">
-                <div class="logo">
-                    <img src="assets/images/gitHub_avatar.png" alt="nassterg" class="avatar">
-                </div>
-            </div>
+    <!-- Main content using CSS Grid -->
+    <main class="main-container">
+        <!-- Left column: Logo -->
+        <div class="left-column">
+            <img src="gitHub_avatar.png" alt="nassterg" class="avatar">
+        </div>
 
-            <!-- Right column: Main content (menu sections) -->
-            <div class="right-column">
-                <section id="home">
-                    <h2>Home</h2>
-                    <p>Welcome to my personal website!</p>
-                </section>
+        <!-- Right column: Main text content -->
+        <div class="right-column">
+            <section id="home">
+                <h2>Home</h2>
+                <p>Welcome to my personal website!</p>
+            </section>
 
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <p>Here are some of my projects...</p>
-                </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of my projects...</p>
+            </section>
 
-                <section id="blog">
-                    <h2>Blog</h2>
-                    <p>Read my latest blog posts...</p>
-                </section>
+            <section id="blog">
+                <h2>Blog</h2>
+                <p>Read my latest blog posts...</p>
+            </section>
 
-                <section id="about">
-                    <h2>About</h2>
-                    <p>Learn more about me...</p>
-                </section>
-            </div>
+            <section id="about">
+                <h2>About</h2>
+                <p>Learn more about me...</p>
+            </section>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2025 nassterg</p>
     </footer>
+
 </body>
 </html>
