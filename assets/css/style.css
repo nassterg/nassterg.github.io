@@ -7,17 +7,17 @@
 
 /* Set a clean, modern font */
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #f7f7f7;
-    color: #333;
+    font-family: 'Open Sans', sans-serif; /* Clean sans-serif font */
+    background-color: #f7f7f7; /* Light background for the body */
+    color: #333; /* Default text color */
     line-height: 1.6;
 }
 
-/* Navbar Styles */
+/* Style the navigation bar (menu) */
 .navbar {
     display: flex;
-    justify-content: center;
-    background-color: #3c313d;
+    justify-content: center; /* Center the menu */
+    background-color: #3c313d; /* Dark background for the menu */
     padding: 10px 0;
     width: 100%;
 }
@@ -33,7 +33,7 @@ body {
 }
 
 .menu ul li a {
-    color: #ebeaec;
+    color: #ebeaec; /* Light font color */
     text-decoration: none;
     font-size: 18px;
     padding: 8px 0;
@@ -42,58 +42,51 @@ body {
 }
 
 .menu ul li a:hover {
-    color: #657ED4; /* Hover color */
+    color: #657ED4; /* Updated hover color */
 }
 
-/* Main content (two-column layout) */
-.content {
-    display: flex; /* Flexbox container for two columns */
-    justify-content: center; /* Center columns in the page */
-    align-items: flex-start; /* Align both at the top */
-    gap: 20px; /* Space between the two columns */
+/* New Layout using CSS Grid */
+.main-container {
+    display: grid;
+    grid-template-columns: 250px auto; /* Left column (logo) and right column (content) */
     max-width: 1200px;
-    margin: 40px auto;
-    width: 100%;
+    margin: 50px auto; /* Center the content */
+    gap: 50px; /* Space between columns */
+    align-items: start; /* Align both columns to the top */
 }
 
-/* Left column (Logo) */
+/* Left column (logo) */
 .left-column {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Left-align the logo */
-    justify-content: flex-start; /* Align items at the top */
-    margin-top: 20px; /* Adjust logo top margin */
-    flex: 1; /* Make this column flexible */
+    justify-content: center; /* Center logo inside the column */
+    align-items: flex-start; /* Align to the top */
 }
 
 /* Logo styles */
-.logo .avatar {
+.avatar {
     width: 180px;
     height: 180px;
     border-radius: 50%; /* Circular logo */
 }
 
-/* Right column (Menu Content) */
+/* Right column (content) */
 .right-column {
     display: flex;
-    flex-direction: column; /* Stack menu sections vertically */
+    flex-direction: column; /* Stack text vertically */
     justify-content: flex-start;
-    margin-top: 20px; /* Same as logo margin */
-    padding-left: 40px; /* Adds space to the left of the right column */
-    flex: 2; /* Make this column larger than the left column */
 }
 
-/* Footer Styles */
+/* Footer styling */
 footer {
     text-align: center;
     padding: 20px 0;
-    background: #3C313D;
+    background: #3C313D; /* Footer color */
     color: white;
     margin-top: 40px;
     font-size: 16px;
 }
 
-/* Add subtle hover effect for links */
+/* Add a subtle hover effect for links */
 a:hover {
     text-decoration: underline;
 }
