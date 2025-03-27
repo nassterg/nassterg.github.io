@@ -29,7 +29,7 @@ h2 {
 /* Set a clean, modern font */
 html, body {
     font-family: 'Lato', sans-serif; /* Clean sans-serif font */
-    background-color: #f7f7f7; /* Light background for the body */
+    background-color: #F7F7F7; /* Light background for the body */
     color: #333; /* Default text color */
     line-height: 1.6;
     height: 100%;
@@ -43,7 +43,7 @@ html, body {
 .navbar {
     display: flex;
     justify-content: center; /* Center the menu */
-    background-color: #3c313d; /* Dark background for the menu */
+    background-color: #3C313D; /* Dark background for the menu */
     padding: 10px 0;
     width: 100%;
 }
@@ -59,7 +59,7 @@ html, body {
 }
 
 .menu ul li a {
-    color: #ebeaec; /* Light font color */
+    color: #EBEAEC; /* Light font color */
     text-decoration: none;
     font-size: 18px;
     padding: 8px 0;
@@ -70,6 +70,47 @@ html, body {
 .menu ul li a:hover {
     color: #657ED4; /* Updated hover color */
 }
+
+/* Style for the submenu */
+
+.menu ul .submenu {
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+.menu ul .submenu .dropdown {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    background-color: #3C313D;
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.menu ul .submenu .dropdown li {
+    padding: 4px 0px;
+}
+
+.menu ul .submenu .dropdown li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 8px 10px;
+}
+
+.menu ul .submenu .dropdown li a:hover {
+    background-color: #657ED4;
+    border-radius: 0px;
+}
+
+/* Show submenu on hover */
+.menu ul .submenu:hover .dropdown {
+    display: block;
+}
+
 
 /* New Layout using CSS Grid */
 .main-container {
