@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nassterg.github.io</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;700&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -37,7 +37,7 @@
         <!-- Left column: Logo -->
 
         <div class="left-column">
-            <img src="assets/images/gitHub_avatar.png" alt="nassterg" class="avatar">
+            <img src="../assets/images/gitHub_avatar.png" alt="nassterg" class="avatar">
         </div>
     
         <div class="right-column">
@@ -101,36 +101,50 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuLinks = document.querySelectorAll(".menu ul li a");
-            const contentDiv = document.getElementById("content");
+    document.addEventListener("DOMContentLoaded", function () {
+    const menuLinks = document.querySelectorAll(".menu ul li a");
+    const submenuLinks = document.querySelectorAll(".submenu .dropdown li a");
+    const projectsMenu = document.querySelector(".submenu > a"); // Main Projects menu
+    const contentDiv = document.getElementById("content");
 
-            function loadContent(page) {
-                fetch(page)
-                    .then(response => response.text())
-                    .then(data => {
-                        contentDiv.innerHTML = data;
-                    })
-                    .catch(error => console.error("Error loading page:", error));
+    function loadContent(page) {
+        fetch(page)
+            .then(response => response.text())
+            .then(data => {
+                contentDiv.innerHTML = data;
+            })
+            .catch(error => console.error("Error loading page:", error));
+    }
+
+    // Set the default page to Home
+    loadContent("home.html");
+
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            if (this.getAttribute("href") === "#") {
+                event.preventDefault();
+                return;
             }
 
-            // Set the default page to Home
-            loadContent("home.html");
+            // Remove active class from all links
+            menuLinks.forEach(link => link.classList.remove("active"));
+            submenuLinks.forEach(link => link.classList.remove("active"));
+            projectsMenu.classList.remove("active-parent"); // Remove highlight from Projects
 
-            menuLinks.forEach(link => {
-                link.addEventListener("click", function (event) {
-                    // Prevent default behavior for the Projects link
-                    if (this.getAttribute("href") === "#") {
-                        event.preventDefault(); // Prevent trying to load the page
-                        return;
-                    }
+            // Add active class to the clicked link
+            this.classList.add("active");
 
-                    // Load content dynamically
-                    const page = this.getAttribute("href").substring(1) + ".html"; // Convert to filename
-                    loadContent(page);
-                });
-            });
+            // Check if a project submenu is clicked
+            if (this.closest(".dropdown")) {
+                projectsMenu.classList.add("active-parent"); // Highlight Projects menu
+            }
+
+            // Load content dynamically
+            const page = this.getAttribute("href").substring(1) + ".html";
+            loadContent(page);
         });
+    });
+});
     </script>
 
 </body>
