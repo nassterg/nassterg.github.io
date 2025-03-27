@@ -67,6 +67,16 @@ html, body {
     font-weight: 400;
 }
 
+.menu ul li a.active {
+    color: #657ED4; /* Change to your preferred highlight color */
+    border-bottom: 0px solid #657ED4; /* Optional underline effect */
+}
+
+.menu ul .submenu a.active-parent {
+    color: #657ED4;
+    border-bottom: 0px solid #657ED4;
+}
+
 .menu ul li a:hover {
     color: #657ED4; /* Updated hover color */
 }
