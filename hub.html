@@ -1,15 +1,362 @@
-<section class="about">
-    <!-- Bigger Text Style -->
-    <h2 class="bigger-text">what's new @ hub...</h2> 
-    <p><span class="highlight-text">Your one-stop destination; explore projects, articles, updates, and more!</span></p>
+/* Reset default styles */
 
-    <section class="learn-info">
-        <ul>
-        <li><span class="learnmore"><img src="../assets/icons/brackets.png" class="icon"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel varius tortor.<a href="#" target="_blank">Learn more...</a></li>
-        <li><span class="highlight-text"><img src="../assets/icons/brackets.png" class="icon"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel varius tortor.<a href="#" target="_blank">Learn more...</a></li>
-        <li><span class="highlight-text"><img src="../assets/icons/brackets.png" class="icon"></span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel varius tortor.<a href="#" target="_blank">Learn more...</a></li>
-        </ul>
-    </section>
+.content-section {
+    display: none;
+}
 
- 
-</section>
+/* Make the Home section visible by default */
+.content-section.active {
+    display: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 14px; /* Change font size of paragraphs */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+h2 {
+    font-size: 20px; /* Adjust the size as needed */
+    font-weight: bold; /* Optional: adjust weight */
+    color: #333; /* Optional: adjust color */
+}
+
+/* Set a clean, modern font */
+html, body {
+    font-family: 'Lato', sans-serif; /* Clean sans-serif font */
+    background-color: #F7F7F7; /* Light background for the body */
+    color: #333; /* Default text color */
+    line-height: 1.6;
+    height: 100%;
+}
+/* Main content area */
+.content {
+    flex-grow: 1; /* Allow content to grow and push footer down */
+}
+
+.highlight-text {
+    font-weight: bold;
+    font-size: 1.0rem; /* Slightly bigger font size for emphasis */
+    color: #657ED4; /* Highlight color */
+}
+
+p span.reference-text {
+    font-weight: bold;
+    font-size: 1.1rem; /* Slightly bigger font size for emphasis */
+    color: #D4657E; /* Highlight color */
+}
+
+.icon-text {
+    display: flex;
+    align-items: center; /* Ensures both icon and text are vertically aligned */
+    gap: 8px; /* Adds spacing between icon and text */
+}
+
+.icon {
+    margin-right: 10px; /* Adds space between the icon and the text */
+    vertical-align: middle; /* Aligns the icon with the text */
+    width: 18px; /* Optional: adjust the size of the SVG icon */
+    height: 18px; /* Optional: adjust the size of the SVG icon */
+    color: #e98a3c !important;
+}
+
+/* Style for bigger text (headings, important phrases) */
+.bigger-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the navigation bar (menu) */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the menu */
+    background-color: #3C313D; /* Dark background for the menu */
+    padding: 10px 0;
+    width: 100%;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Space between menu items */
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    color: #EBEAEC; /* Light font color */
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 0;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.menu ul li a.active {
+    color: #D4657E; /* Change to your preferred highlight color */
+    border-bottom: 0px solid #657ED4; /* Optional underline effect */
+}
+
+.menu ul .submenu a.active-parent {
+    color: #D4657E;
+    border-bottom: 0px solid #657ED4;
+}
+
+.menu ul li a:hover {
+    color: #657ED4; /* Updated hover color */
+}
+
+/* Style for the submenu */
+
+.menu ul .submenu {
+    position: relative; /* Needed for absolute positioning of dropdown */
+}
+
+.menu ul .submenu .dropdown {
+    display: none;
+    position: absolute;
+    left: 10px;
+    top: 100%;
+    background-color: #3C313D;
+    list-style: none;
+    padding: 5px 0;
+    border-radius: 8px;
+    min-width: 150px;
+}
+
+.menu ul .submenu .dropdown li {
+    padding: 4px 0px;
+}
+
+.menu ul .submenu .dropdown li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 8px 10px;
+}
+
+.menu ul .submenu .dropdown li a:hover {
+    background-color: #657ED4;
+    border-radius: 0px;
+}
+
+/* Show submenu on hover */
+.menu ul .submenu:hover .dropdown {
+    display: block;
+}
+
+
+/* New Layout using CSS Grid */
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px auto; /* Left column (logo) and right column (content) */
+    max-width: 1200px;
+    margin: 50px auto; /* Center the content */
+    gap: 50px; /* Space between columns */
+    align-items: start; /* Align both columns to the top */
+}
+
+/* Left column (logo) */
+.left-column {
+    display: flex;
+    justify-content: center; /* Center logo inside the column */
+    align-items: flex-start; /* Align to the top */
+}
+
+/* Logo styles */
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Circular logo */
+}
+
+/* Right column (content) */
+.right-column {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: flex-start;
+}
+
+/* Contact */
+
+.contact-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: inherit; /* Inherit font-family from the body */
+    color: inherit; /* Inherit text color from the body */
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+    font-size: 1rem; /* Keep it consistent with the rest of the text */
+}
+
+.contact-info ul li a {
+    color: inherit; /* Ensure the link color is consistent with the body text */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.contact-info ul li span {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: inherit; /* Keep the heading font consistent */
+}
+
+.contact-info ul li a:hover {
+    color: #657ED4;
+}
+
+/*contact hover*/
+.contacttext {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333; 
+    line-height: 1.6;
+    }
+    
+.contacttext a:hover {
+        color: #657ED4;
+    }
+
+/*Learn info*/
+
+.learn-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333; 
+    
+}
+
+.learn-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.learn-info ul li {
+    margin: 10px 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333; 
+}
+
+.learn-info ul li a {
+    color: inherit; /* Ensure the link color is consistent with the body text */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.learn-info ul li img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.learn-info ul li span {
+    display: flex;
+    align-items: center;
+}
+
+.learn-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: inherit; /* Keep the heading font consistent */
+}
+
+.learn-info ul li a:hover {
+    color: #D4657E;
+}
+
+/*contact hover*/
+.contacttext {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333; 
+    line-height: 1.6;
+    }
+    
+.contacttext a:hover {
+        color: #657ED4;
+    }
+/*Learn more hover*/
+.learnmore {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333; 
+    line-height: 1.6;
+    }
+    
+.learnmore a:hover {
+        color: #D4657E !important;
+    }
+
+/*Download Btn*/
+
+.container-btn { 
+    text-align: center; /* Aligns the button to the right of its container */
+}
+
+.cv-download-btn {
+    background-color: #D4657E;
+    color: white;
+    padding: 8px 14px; /* Adjust padding to make the button balanced */
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 15px; /* Rounded corners, adjust value for more or less rounding */
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-right: auto;
+}
+
+.cv-download-btn:hover {
+    background-color: #657ED4; /* Slightly darker hover effect */
+    text-decoration: none;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #3C313D; /* Footer color */
+    color: white;
+    margin-top: 40px;
+    font-size: 16px;
+    margin-top: auto; /* This pushes footer to the bottom */
+}
+
+/* Add a subtle hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
+
